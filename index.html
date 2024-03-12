@@ -1,0 +1,963 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/output.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <script
+      src="https://kit.fontawesome.com/1e30c8571a.js"
+      crossorigin="anonymous"
+    ></script>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0"
+    />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap"
+      rel="stylesheet"
+    />
+    <title>Aditya</title>
+  </head>
+  <body class="flex md:block">
+    <!-- Navbar -->
+    <nav
+      class="md:flex md:justify-between md:h-10 h-full items-center navmain flex-wrap md:flex-nowrap sticky top-0 z-10"
+    >
+      <div class="logo items-center justify-start flex z-10">
+        <img src="media/logo.png" alt="" class="md:w-28 w-20"  />
+      </div>
+      <ul
+        class="flex text-[#1E1E1E] p-2 font-bold md:gap-10 gap-16 flex-col md:flex-row justify-center md:text-2xl text-xl md:mr-5 z-100"
+      >
+        <li
+          onclick="toggleActive(this)"
+          class="activeclick hover:text-[#695AC6] hover:underline"
+        >
+          <a href="#">
+            <span class="material-symbols-outlined" id="homes"> home </span>
+            <span id="hometwo">Home</span></a
+          >
+        </li>
+        <li
+          onclick="toggleActive(this)"
+          class="activeclick hover:text-[#695AC6] hover:underline"
+        >
+          <a href="#about">
+            <span class="material-symbols-outlined" id="abouts">
+              manage_accounts
+            </span>
+            <span id="abouttwo">About</span></a
+          >
+        </li>
+        <li
+          onclick="toggleActive(this)"
+          class="activeclick hover:text-[#695AC6] hover:underline"
+        >
+          <a href="#project">
+            <span class="material-symbols-outlined" id="projects">
+              developer_mode_tv
+            </span>
+            <span id="projecttwo">Project</span></a
+          >
+        </li>
+        <li
+          onclick="toggleActive(this)"
+          class="activeclick hover:text-[#695AC6] hover:underline"
+        >
+          <a href="#contact">
+            <span class="material-symbols-outlined" id="contacts">
+              contacts
+            </span>
+            <span id="contacttwo">Contact</span></a
+          >
+        </li>
+      </ul>
+    </nav>
+    <!-- Main Content -->
+    <main class="w-[100%] overflow-hidden">
+      <!-- Home -->
+      <section class="hero-section ">
+        <div
+          class="hero-main flex md:py-16 md:mt-5 mt-8 justify-around items-center text-[#1E1E1E] bg flex-wrap"
+        >
+          <div
+            class="hero-text text-3xl md:text-4xl leading-[60px] flex flex-col gap-3 md:items-start items-center"
+          >
+            <h1 class="text-4xl text-[#695AC6] md:text-5xl font-black">
+              <span id="element"></span>
+            </h1>
+            <br />
+            
+            <h1 class="text-center">Hi, I'm <b>Aditya Tiwari</b></h1>
+            <p  class="text-center">
+              I am a <b class="text-[#695AC6]">MERN Stack Developer</b> from
+              India.
+            </p>
+          
+            <a href="https://drive.google.com/file/d/1iu9QrPYvIu7X2H2bqgaWpVJcVEvDPKx7/view?usp=sharing" class="">
+              <button
+                class="overflow-hidden m-5 w-32 p-2 h-12 bg-[#1E1E1E] hover:text-white text-[#ffffff] border-none rounded-md text-xl font-bold cursor-pointer relative z-8 group"
+              >
+                Resume!
+                <span
+                  class="absolute w-36 h-32 -top-8 -left-2 bg-[#695AC6] rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-right"
+                ></span>
+                <span
+                  class="absolute w-36 h-32 -top-8 -left-2 bg-[#eaeaea] rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-right"
+                ></span>
+                <span
+                  class="absolute w-36 h-32 -top-8 -left-2 bg-[#695AC6] rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-right"
+                ></span>
+                <span
+                  class="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10"
+                  >Download!</span
+                >
+              </button>
+            </a>
+          </div>
+          <div
+            class="profilemain bg-gradient-to-r from-[#ffffff] via-[#ffffff] to-[#695AC6] rounded-full sm:mt-5"
+          >
+            <img
+              src="media/profile.png"
+              alt="Profile"
+              class="md:w-96 w-72 imageconvert flex rounded-full p-4"
+            />
+          </div>
+        </div>
+      </section>
+      <!-- About -->
+      <section
+        id="about"
+        class="about-section py-10 md:py-0  "
+      >
+      <div class=" flex md:flex-row flex-col justify-center ">
+        <!-- About details -->
+        <div
+          class="container aboutdetails flex flex-col p-2 items-center  md:items-start"
+        >
+          <img src="media/About.png" alt="" class="md:w-[280px] w-[200px]  md:ml-20">
+        </div>
+        <!-- Skills -->
+        <div
+          class=" container p-2 text-xl flex flex-col gap-1 items-center justify-center"
+        >
+        <p
+          class="text-justify md:mr-5 hero-text text-xl first-letter:text-[#695AC6] first-letter:text-5xl"
+          id="description"
+        >
+          Passionate about crafting cutting-edge web applications with
+          innovative functionalities, My dedication to pushing the boundaries
+          of modern web development is evident in every project I undertake. <br />
+        </p>
+          <!-- card -->
+          <div id="carousel" class="carousel">
+            <div class="carousel-inner">
+              <!-- Languages -->
+              <div class="carousel-item activecard ">
+                <div class="card flex flex-col gap-4">
+                  <p class="text-justify  md:mt-8 font-semibold">Languages</p>
+                  <ul class="skillset flex flex-col gap-5">
+                    <li
+                      class="cursor-pointer w-0 hover:w-[90%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="Hyper Text Markup Language (90%)"
+                        class="no-underline flex items-center gap-2"
+                      >
+                        <i class="fa-brands fa-html5"></i>HTML5</abbr
+                      >
+                    </li>
+                    <li
+                      class="cursor-pointer w-0 hover:w-[85%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="Cascading Style Sheets (85%)"
+                        class="no-underline flex items-center gap-2"
+                      >
+                        <i class="fa-brands fa-css3-alt"></i>CSS3</abbr
+                      >
+                    </li>
+                    <li
+                      class="cursor-pointer w-0 hover:w-[75%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="Working With Advance Javascript (75%)"
+                        class="no-underline flex items-center gap-2"
+                      >
+                        <i class="fa-brands fa-js"></i>JavaScriptES6</abbr
+                      >
+                    </li>
+                    <li
+                      class="cursor-pointer w-0 hover:w-[70%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="C is My First Language (70%)"
+                        class="no-underline flex items-center gap-2"
+                      >
+                        <i class="fa-solid fa-code"></i>C</abbr
+                      >
+                    </li>
+                    <li
+                      class="cursor-pointer w-0 hover:w-[60%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="Larning Python For Advance Programming (60%)"
+                        class="no-underline flex items-center gap-2"
+                      >
+                        <i class="fa-brands fa-python"></i>Python</abbr
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+              <!-- FrameWork -->
+              <div class="carousel-item">
+                <div class="card flex flex-col gap-4">
+                  <p class="text-justify md:mt-8 font-semibold">FrameWorks</p>
+                  <ul class="skillset flex flex-col gap-5">
+                    <li
+                      class="cursor-pointer w-0 hover:w-[65%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="Learn React JS For Advance Web Development (65%)"
+                        class="no-underline flex items-center gap-2"
+                        ><i class="fa-brands fa-react"></i>ReactJS(NextJS)</abbr
+                      >
+                    </li>
+                    <li
+                      class="cursor-pointer w-0 hover:w-[65%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="TailWind CSS (65%)"
+                        class="no-underline flex items-center gap-2"
+                        ><i class="fa-solid fa-file-code"></i>TailWind</abbr
+                      >
+                    </li>
+                    <li
+                      class="cursor-pointer w-0 hover:w-[60%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="Larn NodeJS For Backend Development (60%)"
+                        class="no-underline flex items-center gap-2"
+                        ><i class="fa-brands fa-node"></i>NodeJS</abbr
+                      >
+                    </li>
+                    <li
+                      class="cursor-pointer w-0 hover:w-[60%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="MongoDB For The DataBase (60%)"
+                        class="no-underline flex items-center gap-2"
+                        ><i class="fa-brands fa-envira"></i>MongoDB</abbr
+                      >
+                    </li>
+                    <li
+                      class="cursor-pointer w-0 hover:w-[50%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="ExpressJS For Backend Development (50%)"
+                        class="no-underline flex items-center gap-2"
+                        ><i class="fa-solid fa-truck-fast"></i>ExpressJS</abbr
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+              <!-- Technologies -->
+              <div class="carousel-item">
+                <div class="card flex flex-col gap-4">
+                  <p class="text-justify md:mt-8 font-semibold">Technologies</p>
+                  <ul class="skillset flex flex-col gap-5">
+                    <li
+                      class="cursor-pointer w-0 hover:w-[70%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="Learn Git For Managing Source Code (70%)"
+                        class="no-underline flex items-center gap-2"
+                        ><i class="fa-brands fa-git-alt"></i>Git</abbr
+                      >
+                    </li>
+                    <li
+                      class="cursor-pointer w-0 hover:w-[75%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="Learn Github For Managing and Share Code (75%)"
+                        class="no-underline flex items-center gap-2"
+                        ><i class="fa-brands fa-github"></i>GitHub</abbr
+                      >
+                    </li>
+                    <li
+                      class="cursor-pointer w-0 hover:w-[50%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="Figma For Desgining Websites (85%)"
+                        class="no-underline flex items-center gap-2"
+                        ><i class="fa-brands fa-figma"></i>Figma</abbr
+                      >
+                    </li>
+                    <li
+                      class="cursor-pointer w-0 hover:w-[85%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="Visual Studio Code For Devlopment and Programming (85%)"
+                        class="no-underline flex items-center gap-2"
+                        ><i class="fa-solid fa-file-pen"></i>VSCode</abbr
+                      >
+                    </li>
+                    <li
+                      class="cursor-pointer w-0 hover:w-[60%] transition-all rounded-sm duration-300 bg-gradient-to-r from-[#695AC6] via-[#eaeaea] to-[#ffff] hover:text-white"
+                    >
+                      <abbr
+                        title="Linux For Server Operating System (60%)"
+                        class="no-underline flex items-center gap-2"
+                        ><i class="fa-brands fa-linux"></i>Linux</abbr
+                      >
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+            <div class="text-center h-16">
+              <button id="nextBtn" class="carousel-control next md:right-[30%]">
+                &gt;
+              </button>
+              <button id="prevBtn" class="carousel-control prev md:right-[70%]">
+                &lt;
+              </button>
+            </div>
+          </div>
+          <!-- card -->
+        </div>
+      </div>
+      </section>
+      <!-- Project -->
+      <section id="project" class="project-section md:mt-10 ">
+        <div
+          class="project-content flex-col items-center flex gap-5 w-[100%] justify-between"
+        >
+          <div class="info flex flex-col items-center md:m-2">
+            <h1 class="md:text-5xl text-3xl text-[#695AC6] font-extrabold">
+              Projects
+            </h1>
+            <p class="text-lg text-[#1E1E1E]">Here Are Some of My Projects</p>
+          </div>
+          <ul
+            class="projects text-[#1E1E1E] flex items-center justify-center flex-wrap gap-x-10 gap-y-10"
+          >
+            <li
+              class="card transition duration-300 w-60 hover:text-[#695AC6] ease-in-out transform hover:scale-105"
+            >
+              <a href="#">
+                <img src="media/Netflix.jpg" alt="" />
+                <div class="desc">
+                  <h2 class="md:text-2xl text-xl font-bold">Project 1</h2>
+                  <p class="text-lg">NetFlix Clone (HTML,CSS,Responsive).</p>
+                </div>
+              </a>
+            </li>
+            <li
+              class="card card-dark transition duration-300 w-60 hover:text-[#695AC6] ease-in-out transform hover:scale-105"
+            >
+              <a href="#">
+                <img src="media/amazon.png" alt="" />
+                <div class="desc desc-light">
+                  <h2 class="md:text-2xl text-xl font-semibold">Project 2</h2>
+                  <p class="text-lg">Amazon Clone (HTML,CSS,Nan).</p>
+                </div>
+              </a>
+            </li>
+            <li
+              class="card card-dark transition duration-300 w-60 hover:text-[#695AC6] ease-in-out transform hover:scale-105"
+            >
+              <a href="#">
+                <img src="media/Prime.png" alt="" />
+                <div class="desc desc-light">
+                  <h2 class="md:text-2xl text-xl font-semibold">Project 3</h2>
+                  <p class="text-lg">AmazonPrime Clone (HTML,CSS,Nan).</p>
+                </div>
+              </a>
+            </li>
+            <li
+              class="card card-dark transition duration-300 w-60 hover:text-[#695AC6] ease-in-out transform hover:scale-105"
+            >
+              <a href="#">
+                <img src="media/Facebook.png" alt="" />
+                <div class="desc desc-light">
+                  <h2 class="md:text-2xl text-xl font-semibold">Project 4</h2>
+                  <p class="text-lg">FaceBookSignup (HTML,CSS,Responsive).</p>
+                </div>
+              </a>
+            </li>
+            <li
+              class="card card-dark transition duration-300 w-60 hover:text-[#695AC6] ease-in-out transform hover:scale-105"
+            >
+              <a href="#">
+                <img src="media/Spotify.png" alt="" />
+                <div class="desc desc-light">
+                  <h2 class="md:text-2xl text-xlfont-semibold">Project 5</h2>
+                  <p class="text-lg">Spotify Clone (HTML,CSS,javascript).</p>
+                </div>
+              </a>
+            </li>
+            <li
+              class="card card-dark transition duration-300 w-60 hover:text-[#695AC6] ease-in-out transform hover:scale-105"
+            >
+              <a href="#">
+                <img src="media/Instagram.png" alt="" />
+                <div class="desc desc-light">
+                  <h2 class="md:text-2xl text-xl font-semibold">Project 6</h2>
+                  <p class="text-lg">Instagram Clone (HTML,CSS,TailWind).</p>
+                </div>
+              </a>
+            </li>
+            <li
+              class="card card-dark transition duration-300 w-60 hover:text-[#695AC6] ease-in-out transform hover:scale-105"
+            >
+              <a href="#">
+                <img src="media/builder.png" alt="" />
+                <div class="desc desc-light">
+                  <h2 class="md:text-2xl text-xl font-semibold">Project 7</h2>
+                  <p class="text-lg">BuilderMaker (HTML,CSS,javascript).</p>
+                </div>
+              </a>
+            </li>
+            <li
+              class="card card-dark transition duration-300 w-60 hover:text-[#695AC6] ease-in-out transform hover:scale-105"
+            >
+              <a href="#">
+                <img src="media/Bulb.png" alt="" />
+                <div class="desc desc-light">
+                  <h2 class="md:text-2xl text-xl font-semibold">Project 8</h2>
+                  <p class="text-lg">GlowingBulb (HTML,CSS,javascript).</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <!-- Experience/Education -->
+      <section class="text-[ #444444] body-font ">
+        <div class="container md:px-5 py-16 mx-auto">
+          <div
+            class="flex flex-wrap w-full mb-10 z flex-col items-center text-center"
+          >
+            <h1
+              class="sm:text-3xl title-font mb-2 md:text-5xl text-3xl text-[#695AC6] font-extrabold"
+            >
+              Educational Details
+            </h1>
+            <p class="lg:w-1/2 w-full leading-relaxed text-[#1E1E1E]">
+              Education & Certification
+            </p>
+          </div>
+          <div class="flex flex-wrap justify-center md:p-0 px-10 -m-4">
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="education border border-[#1E1E1E] bg-[#695AC6]  p-6 rounded-lg">
+                <div
+                  class="w-10 p-1 h-10 inline-flex items-center justify-center rounded-full bg-white mb-4"
+                >
+                  <svg
+                    viewBox="0 -8.14 62.451 62.451"
+                    xmlns="http://www.w3.org/2000/svg"
+                    fill="#000000"
+                    stroke="#000000"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g
+                        id="Group_35"
+                        data-name="Group 35"
+                        transform="translate(-782.964 -1356.609)"
+                      >
+                        <path
+                          id="Path_92"
+                          data-name="Path 92"
+                          d="M798.022,1369.359v23.226h.034c.353,4.555,7.685,8.2,16.7,8.2s16.347-3.641,16.7-8.2h.033v-23.226Z"
+                          fill="#d1d3d4"
+                          stroke="#231f20"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="4"
+                        ></path>
+                        <path
+                          id="Path_93"
+                          data-name="Path 93"
+                          d="M843.415,1373.207l-29.225,14.6-29.227-14.6,29.227-14.6Z"
+                          fill="#ffffff"
+                          stroke="#231f20"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="4"
+                        ></path>
+                        <line
+                          id="Line_40"
+                          data-name="Line 40"
+                          y1="19.235"
+                          transform="translate(784.964 1374.361)"
+                          fill="#ffffff"
+                          stroke="#231f20"
+                          stroke-linecap="round"
+                          stroke-linejoin="round"
+                          stroke-width="4"
+                        ></line>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-[#ffffff] font-medium title-font mb-2">
+                  Graduation
+                </h2>
+                <h3
+                  class="tracking-widest text-[ #444444] text-xs text-white title-font font-bold"
+                >
+                  Bachelor Art (B.A)
+                </h3>
+                <p class="leading-relaxed text-base text-[#ffffff]">
+                  Raksha Rao Rajnath Rao Mahavidyalaya College, Deoria (2019 -
+                  2022).<br />
+                  Political Science
+                </p>
+              </div>
+            </div>
+
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class="education border border-[#1E1E1E]  bg-[#695AC6] p-6 rounded-lg">
+                <div
+                  class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-white p-1 mb-4"
+                >
+                  <svg
+                    fill="#000000"
+                    version="1.2"
+                    baseProfile="tiny"
+                    id="Layer_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="-63 65 128 128"
+                    xml:space="preserve"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M-16.6,136.2h71.8v-5.8H31.1l-0.1,0.2l-0.6-0.2h-47V136.2z M-16.9,66.1c7.1,0,12.8,5.7,12.8,12.8c0,7.1-5.7,12.8-12.8,12.8 S-29.7,86-29.7,78.9C-29.7,71.8-24,66.1-16.9,66.1z M42.7,93.4l-16-12.1l-1.9,6.1l-9.4-3.1l-10.6,32l-17.4,0.2l-14.7-24.9 c-1.1-2-3.3-3.1-5.8-3.1c-0.3,0-1.2,0.1-1.6,0.2c-0.3,0.1-0.8,0.2-1.2,0.3c-10.9,3.6-19.4,20.6-19.4,38.3c-0.1,5.3,0,9.8,0.3,14.1 c-0.4,5.1,2.6,10.2,7.6,12c1.4,0.4,2.6,0.7,3.9,0.7h32.3v30.1c0,4.1,3.3,7.3,7.3,7.3c4.1,0,7.3-3.3,7.3-7.3V147 c0-1.9-0.7-3.8-2.2-5.1c-1.5-1.5-3.4-2.3-5.1-2.3h-21.6v-16.1l-11.2-19c-0.4-0.7-0.1-1.8,0.5-2.2c0.7-0.4,1.8-0.1,2.2,0.5l12.8,22.1 c1,1.7,2.7,2.9,4.8,2.9H5.8c2.4,0,4.4-1.6,5.3-3.6l19.2,6.3l0.7,0.2l0.1-0.2l12.2-36.9L42.7,93.4z M29.7,128l-18.2-6 c0-2.6-1.9-4.9-4.3-5.4l9.7-29.6l23.7,7.8L29.7,128z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-[#ffffff] font-medium title-font mb-2">
+                  Intermediate
+                </h2>
+                <h3
+                  class="tracking-widest text-[#ffffff] text-xs font-medium title-font"
+                >
+                  Science & Biology
+                </h3>
+                <p class="leading-relaxed text-base text-[#ffffff]">
+                  Janta Intermediate College,Rudrapur Deoria - U.P (2018 -
+                  2019).
+                  <br />
+                  Science
+                </p>
+              </div>
+            </div>
+
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class=" education-border border border-[#1E1E1E] bg-[#695AC6]  p-6 rounded-lg">
+                <div
+                  class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-white p-1 mb-4"
+                >
+                  <svg
+                    version="1.1"
+                    id="Icons"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 32 32"
+                    xml:space="preserve"
+                    fill="#000000"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <style type="text/css">
+                        .st0 {
+                          fill: #ffffff;
+                        }
+                      </style>
+                      <path
+                        d="M28.9,9.4C28.9,9.4,28.9,9.4,28.9,9.4C28.9,9.3,29,9.2,29,9.1c0,0,0,0,0-0.1c0,0,0,0,0-0.1c0-0.1,0-0.2,0-0.3c0,0,0,0,0-0.1 c0-0.1-0.1-0.2-0.1-0.3c0,0,0,0,0,0c-0.1-0.1-0.1-0.1-0.2-0.2l-11-7c-0.3-0.2-0.8-0.2-1.1,0l-13,9c0,0-0.1,0.1-0.1,0.1 c0,0,0,0-0.1,0c-0.1,0.1-0.1,0.2-0.2,0.3c0,0,0,0,0,0.1C3,10.8,3,10.9,3,11c0,0,0,0,0,0v6v6c0,0.3,0.2,0.7,0.5,0.8l11,7 c0.2,0.1,0.4,0.2,0.5,0.2c0.2,0,0.4-0.1,0.6-0.2l13-9c0.2-0.2,0.4-0.4,0.4-0.7s-0.1-0.6-0.3-0.8c-0.9-0.9-1.1-2.2-0.5-3.4l0.7-1.5 c0-0.1,0.1-0.2,0.1-0.3c0,0,0-0.1,0-0.1c0,0,0,0,0,0c0-0.1,0-0.3-0.1-0.4c0,0,0-0.1,0-0.1c0-0.1-0.1-0.2-0.2-0.3c0,0,0,0,0,0 c-0.9-0.9-1.1-2.2-0.5-3.4L28.9,9.4z M26.6,14.8l-11.6,8L5,16.5v-3.6l9.5,6c0.2,0.1,0.4,0.2,0.5,0.2c0.2,0,0.4-0.1,0.6-0.2l10.3-7.1 C25.8,12.8,26,13.8,26.6,14.8z M15,28.8L5,22.5v-3.6l9.5,6c0.2,0.1,0.4,0.2,0.5,0.2c0.2,0,0.4-0.1,0.6-0.2l10.3-7.1 c-0.1,1.1,0.1,2.2,0.7,3.1L15,28.8z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-[#ffffff] font-medium title-font mb-2">
+                  High School
+                </h2>
+                <h3
+                  class="tracking-widest text-[#ffffff] text-xs font-medium title-font"
+                >
+                  Math & Science
+                </h3>
+                <p class="leading-relaxed text-base text-[#ffffff]">
+                  Baccha Ram Yadav IntermediateCollege, Allahabad (2016 -
+                  2017).<br />
+                  Math
+                </p>
+              </div>
+            </div>
+
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class=" education border border-[#1E1E1E] bg-[#695AC6] -[#1E1E1E] p-6 rounded-lg">
+                <div
+                  class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-white p-2 mb-4"
+                >
+                  <svg
+                    fill="#000000"
+                    version="1.1"
+                    id="Capa_1"
+                    xmlns="http://www.w3.org/2000/svg"
+                    xmlns:xlink="http://www.w3.org/1999/xlink"
+                    viewBox="0 0 392.186 392.186"
+                    xml:space="preserve"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <g>
+                        <g>
+                          <g>
+                            <path
+                              d="M368.62,17.951H23.568C10.57,17.951,0,28.524,0,41.52v309.146c0,12.996,10.57,23.568,23.568,23.568h345.053 c12.994,0,23.564-10.572,23.564-23.568V41.52C392.188,28.525,381.614,17.951,368.62,17.951z M297.56,57.528 c0-4.806,3.896-8.703,8.701-8.703h8.703c4.808,0,8.701,3.896,8.701,8.703v9.863c0,4.806-3.896,8.702-8.701,8.702h-8.703 c-4.805,0-8.701-3.896-8.701-8.702V57.528z M257.093,57.528c0-4.806,3.898-8.703,8.703-8.703h8.701 c4.805,0,8.703,3.896,8.703,8.703v9.863c0,4.806-3.898,8.702-8.703,8.702h-8.701c-4.805,0-8.703-3.896-8.703-8.702V57.528z M363.903,345.951H28.282V102.235h335.621V345.951L363.903,345.951z M364.132,67.391c0,4.806-3.896,8.702-8.701,8.702h-8.703 c-4.809,0-8.702-3.896-8.702-8.702v-9.863c0-4.806,3.896-8.703,8.702-8.703h8.703c4.806,0,8.701,3.896,8.701,8.703V67.391z"
+                            ></path>
+                            <path
+                              d="M84.185,233.284l63.084,29.336c1.631,0.755,3.367,1.138,5.162,1.138c2.338,0,4.617-0.664,6.598-1.924 c3.547-2.267,5.666-6.13,5.666-10.334v-0.322c0-4.752-2.785-9.116-7.096-11.118l-39.455-18.332l39.455-18.334 c4.311-2.004,7.096-6.367,7.096-11.117v-0.319c0-4.21-2.119-8.075-5.666-10.334c-1.961-1.253-4.246-1.916-6.605-1.916 c-1.779,0-3.563,0.391-5.16,1.133l-63.08,29.333c-4.307,2.004-7.09,6.369-7.09,11.117v0.877 C77.093,226.909,79.874,231.272,84.185,233.284z"
+                            ></path>
+                            <path
+                              d="M165.257,293.036c2.301,3.149,6.002,5.03,9.9,5.03h0.316c5.352,0,10.041-3.426,11.672-8.517L228.7,160.788 c1.192-3.716,0.531-7.818-1.771-10.973c-2.301-3.15-6.002-5.03-9.901-5.03h-0.315c-5.354,0-10.048,3.425-11.679,8.516 l-41.559,128.771C162.292,285.793,162.958,289.889,165.257,293.036z"
+                            ></path>
+                            <path
+                              d="M227.49,192.276c0,4.745,2.783,9.109,7.095,11.123l39.455,18.329l-39.455,18.33c-4.31,2.004-7.095,6.368-7.095,11.118 v0.322c0,4.205,2.117,8.068,5.668,10.336c1.974,1.258,4.254,1.924,6.595,1.924c1.793,0,3.528-0.383,5.17-1.142l63.08-29.335 c4.307-2.009,7.09-6.372,7.09-11.115v-0.877c0-4.748-2.783-9.113-7.094-11.117l-63.08-29.333 c-1.591-0.74-3.373-1.131-5.152-1.131c-2.355,0-4.643,0.661-6.604,1.912c-3.551,2.263-5.67,6.127-5.67,10.337v0.318H227.49 L227.49,192.276z"
+                            ></path>
+                          </g>
+                        </g>
+                      </g>
+                    </g>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-[#ffffff] font-medium title-font mb-2">
+                  Web Devlopment
+                </h2>
+                <h3
+                  class="tracking-widest text-[#ffffff] text-xs font-medium title-font"
+                >
+                  Full Stack Developer
+                </h3>
+                <p class="leading-relaxed text-base text-[#ffffff]">
+                  Internshala ( HTML, CSS, Bootstrap, DBMS, PHP, JS, React)
+                  Certificate-No- (16thrn78zzj - 2023-09-30).
+                </p>
+              </div>
+            </div>
+
+            <div class="xl:w-1/3 md:w-1/2 p-4">
+              <div class=" education border border-[#1E1E1E] bg-[#695AC6] -[#1E1E1E] p-6 rounded-lg">
+                <div
+                  class="w-10 h-10 inline-flex items-center justify-center rounded-full bg-white p-2 mb-4"
+                >
+                  <svg
+                    fill="#000000"
+                    viewBox="0 0 32 32"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g
+                      id="SVGRepo_tracerCarrier"
+                      stroke-linecap="round"
+                      stroke-linejoin="round"
+                    ></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path
+                        d="M7.11,23.52l1.42-1.41C5.14,18.72,3.37,17,2.39,16L8.53,9.89A1,1,0,1,0,7.11,8.47L.29,15.29A1.05,1.05,0,0,0,0,16a1,1,0,0,0,.3.71Z"
+                      ></path>
+                      <path
+                        d="M31.71,15.29c-.1-.09-6.82-6.82-6.82-6.82L23.48,9.89c3.38,3.38,5.15,5.16,6.13,6.09l-6.13,6.13a1,1,0,0,0,.7,1.71,1,1,0,0,0,.71-.3l6.82-6.81A1,1,0,0,0,32,16,1,1,0,0,0,31.71,15.29Z"
+                      ></path>
+                      <path
+                        d="M13.27,27.91a1,1,0,0,0,1-.76L19.7,5.33a1,1,0,0,0-1.94-.48L12.3,26.67A1,1,0,0,0,13,27.88,1,1,0,0,0,13.27,27.91Z"
+                      ></path>
+                    </g>
+                  </svg>
+                </div>
+                <h2 class="text-lg text-[#ffffff] font-medium title-font mb-2">
+                  DCA
+                </h2>
+                <h3
+                  class="tracking-widest text-[#ffffff] text-xs font-medium title-font"
+                >
+                  Programming & Desgining
+                </h3>
+                <p class="leading-relaxed text-base text-[#ffffff]">
+                  I-Cat Computer Institute ( C, Photo-shop, Corel-Draw,
+                  Accounting, MS-Office) Certificate-No- (996 - 2021-01-09).
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- Contact -->
+      <section
+        id="contact"
+        class="body-font relative text-[#ffffff] overflow-hidden"
+      >
+        <div class="px-5 py-16 mx-auto flex sm:flex-nowrap flex-wrap">
+          <div
+            class="lg:w-2/3 md:w-1/3 rounded-lg overflow-hidden sm:mr-10 md:p-0 p-10 flex items-end justify-start relative"
+          >
+            <iframe
+              width="100%"
+              height="100%"
+              class="absolute inset-0"
+              frameborder="0"
+              title="map"
+              marginheight="0"
+              marginwidth="0"
+              scrolling="no"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d681.8804069055284!2d77.3504611009002!3d28.602655745172274!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390ce51219d518c3%3A0xb813491911bf11b1!2sNeelam&#39;s%20PG!5e1!3m2!1sen!2sin!4v1707546763276!5m2!1sen!2sin"
+              style="filter: grayscale(1) contrast(1.2) opacity(0.8)"
+            ></iframe>
+            <div class="relative flex flex-wrap py-6 rounded shadow-md">
+              <div class="lg:w-1/2 px-6">
+                <h2
+                  class="title-font font-semibold text-[#ffffff] tracking-widest text-xs"
+                >
+                  ADDRESS
+                </h2>
+                <p class="mt-1">Sector-55, Noida (Uttar Pradesh) India</p>
+              </div>
+              <div class="lg:w-1/2 px-6 mt-4 lg:mt-0">
+                <h2
+                  class="title-font font-semibold text-[#ffffff] tracking-widest text-xs"
+                >
+                  EMAIL
+                </h2>
+                <a class="text-[#ffffff] leading-relaxed">at37907@gmail.com</a>
+                <h2
+                  class="title-font font-semibold text-[#ffffff] tracking-widest text-xs mt-4"
+                >
+                  PHONE
+                </h2>
+                <p class="leading-relaxed">+91-8707819196</p>
+              </div>
+            </div>
+          </div>
+          <div
+            class="lg:w-1/3 md:w-1/2 rounded-md flex flex-col md:ml-auto w-full md:py-8 mt-8 md:mt-0"
+          >
+            <h2
+              class="text-[#695AC6] text-center text-lg mb-1 title-font font-bold"
+            >
+              Feedback
+            </h2>
+            <p class="leading-relaxed mb-5 text-center text-[#695AC6] font-bold">
+              Send Your Feedback
+            </p>
+            <div class="relative mb-4 p-2">
+              <label for="name" class="leading-7 text-sm text-[#1E1E1E]"
+                >Name</label
+              >
+              <input
+                type="text"
+                id="name"
+                name="name"
+                autocomplete="name"
+                class="w-full bg-white rounded border border-[#1E1E1E] focus:border-[#695AC6] focus:ring-2 focus:ring-indigo-200 text-base outline-none text-[#1E1E1E] py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4 p-2">
+              <label for="email" class="leading-7 text-sm text-[#1E1E1E]"
+                >Email</label
+              >
+              <input
+                type="email"
+                id="email"
+                name="email"
+                autocomplete="name"
+                class="w-full bg-white rounded border border-[#1E1E1E] focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 text-base outline-none text-[#1E1E1E] py-1 px-3 leading-8 transition-colors duration-200 ease-in-out"
+              />
+            </div>
+            <div class="relative mb-4 p-2">
+              <label for="message" class="leading-7 text-sm text-[#1E1E1E]"
+                >Message</label
+              >
+              <textarea
+                id="message"
+                name="message"
+                class="w-full bg-white rounded border border-[#1E1E1E] focus:border-indigo-500 focus:ring-2 focus:ring-indigo-200 h-32 text-base outline-none text-[#1E1E1E] py-1 px-3 resize-none leading-6 transition-colors duration-200 ease-in-out"
+              ></textarea>
+            </div>
+            <div class="text-center">
+              <button
+               id="sendMsg" class="overflow-hidden w-32 p-2 h-12 bg-black text-white hover:text-white border-none rounded-md text-xl font-bold cursor-pointer relative z-8 group"
+              >
+                Message!
+                <span
+                  class="absolute w-36 h-32 -top-8 -left-2 bg-[#695AC6] rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-500 duration-1000 origin-right"
+                ></span>
+                <span
+                  class="absolute w-36 h-32 -top-8 -left-2 bg-[#eaeaea] rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-700 duration-700 origin-right"
+                ></span>
+                <span
+                  class="absolute w-36 h-32 -top-8 -left-2 bg-[#695AC6] rotate-12 transform scale-x-0 group-hover:scale-x-100 transition-transform group-hover:duration-1000 duration-500 origin-right"
+                ></span>
+                <span
+                  class="group-hover:opacity-100 group-hover:duration-1000 duration-100 opacity-0 absolute top-2.5 left-6 z-10"
+                  >Send!</span
+                >
+              </button>
+            </div>
+            <p class="text-xs text-center text-[#1E1E1E] mt-3">
+              Thank You For Visiting.
+            </p>
+          </div>
+        </div>
+      </section>
+      <!-- Footer -->
+      <footer class="body-font relative">
+        <div
+          class="container px-5 mx-auto flex items-center sm:flex-row flex-col"
+        >
+          <a
+            class="flex z-10 title-font font-medium items-center md:justify-start justify-center text-[#1E1E1E]"
+          >
+            <img src="media/logo.png" alt="" class="w-24" />
+            <span class="ml-3 text-xl">For More...</span>
+          </a>
+          <p
+            class="text-sm text-[#1E1E1E] z-10 sm:ml-4 sm:pl-4 sm:border-l-2 sm:border-[#1E1E1E] sm:py-2 sm:mt-0 mt-4"
+          >
+            © 2024 RayAnnCoder —
+            <a
+              href="https://twitter.com/bala_tiwar25603"
+              class="text-[#444444] ml-1"
+              rel="noopener noreferrer"
+              target="_blank"
+              >@rayann</a
+            >
+          </p>
+          <span
+            class="inline-flex z-10 sm:ml-auto sm:mt-0 mt-4 justify-center sm:justify-start"
+          >
+            <a
+              class="text-[#1E1E1E]"
+              href="https://www.facebook.com/profile.php?id=100012251704549"
+            >
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M18 2h-3a5 5 0 00-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 011-1h3z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="ml-3 text-[#1E1E1E]"
+              href="https://twitter.com/bala_tiwar25603"
+            >
+              <svg
+                fill="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  d="M23 3a10.9 10.9 0 01-3.14 1.53 4.48 4.48 0 00-7.86 3v1A10.66 10.66 0 013 4s-4 9 5 13a11.64 11.64 0 01-7 2c9 5 20 0 20-11.5a4.5 4.5 0 00-.08-.83A7.72 7.72 0 0023 3z"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="ml-3 text-[#1E1E1E]"
+              href="https://www.instagram.com/ray___ann___/?hl=en"
+            >
+              <svg
+                fill="none"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="2"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                <path
+                  d="M16 11.37A4 4 0 1112.63 8 4 4 0 0116 11.37zm1.5-4.87h.01"
+                ></path>
+              </svg>
+            </a>
+            <a
+              class="ml-3 text-[#1E1E1E]"
+              href="https://www.linkedin.com/in/balatiwari/"
+            >
+              <svg
+                fill="currentColor"
+                stroke="currentColor"
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                stroke-width="0"
+                class="w-5 h-5"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  stroke="none"
+                  d="M16 8a6 6 0 016 6v7h-4v-7a2 2 0 00-2-2 2 2 0 00-2 2v7h-4v-7a6 6 0 016-6zM2 9h4v12H2z"
+                ></path>
+                <circle cx="4" cy="4" r="2" stroke="none"></circle>
+              </svg>
+            </a>
+          </span>
+        </div>
+      </footer>
+    </main>
+
+    <script src="js/script.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+    <script>
+      var typed = new Typed("#element", {
+        strings: [
+          "MERN STACK !",
+          "PROGRAMER <>",
+          'DESGINER ""',
+          "DEVELOPER !",
+        ],
+        typeSpeed: 100,
+      });
+    </script>
+  </body>
+</html>

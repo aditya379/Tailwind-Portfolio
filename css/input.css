@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Ubuntu", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  body {
+    background: url(../media/BGMain.jpg);
+    /*background-color: #1a2
+    374c58;*/
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+}
+
+.navmain{
+  transition: all 0.3s ease-in;
+}
+
+.navmain:hover{
+  background-color: rgba(255, 255, 255, 0.728);
+}
+.hero-text {
+  border-radius: 10px;
+  padding: 10px;
+  background: #e0e0e0;
+  box-shadow: 20px 20px 60px #bebebe, -20px -20px 60px #ffffff;
+}
+
+.active {
+  color: #695ac6;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+#homes,
+#abouts,
+#projects,
+#contacts {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  #homes,
+  #abouts,
+  #projects,
+  #contacts {
+    display: inline-block;
+    font-size: 2rem;
+  }
+  #hometwo,
+  #abouttwo,
+  #projecttwo,
+  #contacttwo {
+    display: none;
+  }
+}
+
+.threed {
+  border-radius: 20px;
+  background: #695ac6;
+  box-shadow: 20px 20px 60px #695ac6, -20px -20px 60px #695ac6;
+}
+
+/* Card */
+.carousel {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+
+.carousel-item {
+  flex: 0 0 100%;
+}
+
+.carousel-item img {
+  width: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 90%;
+  transform: translateY(-50%);
+  width: 40px;
+  height: 40px;
+  background: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  font-size: 12px;
+  cursor: pointer;
+}
+
+.prev {
+  left: 30%;
+  opacity: 0.5;
+}
+
+.next {
+  right: 30%;
+  opacity: 0.5;
+}
+
+@media screen and (max-width:640px) {
+  .profilemain{
+    margin-top: 1.25rem;
+  }
+}
