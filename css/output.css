@@ -687,10 +687,6 @@ video {
   display: inline-flex;
 }
 
-.hidden {
-  display: none;
-}
-
 .h-10 {
   height: 2.5rem;
 }
@@ -970,6 +966,10 @@ video {
   padding: 1.5rem;
 }
 
+.p-8 {
+  padding: 2rem;
+}
+
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1228,8 +1228,9 @@ body {
   transition: all 0.3s ease-in;
 }
 
-.navmain:hover{
-  background-color: rgba(255, 255, 255, 0.728);
+.shrink{
+  background-color: rgba(0, 0, 0, 0.687);
+  color: #cdcdcd;
 }
 
 .hero-text {
@@ -1325,6 +1326,10 @@ body {
 @media screen and (max-width:640px) {
   .profilemain{
     margin-top: 1.25rem;
+  }
+
+  .shrink{
+    background-color: #ffffff7a;
   }
 }
 
@@ -1449,10 +1454,6 @@ body {
     margin-top: 1.25rem;
   }
 
-  .sm\:hidden {
-    display: none;
-  }
-
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -1564,10 +1565,6 @@ body {
 
   .md\:flex-row {
     flex-direction: row;
-  }
-
-  .md\:flex-wrap {
-    flex-wrap: wrap;
   }
 
   .md\:flex-nowrap {

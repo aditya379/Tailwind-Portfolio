@@ -35,3 +35,10 @@ nextBtn.addEventListener("click", () => slide("next"));
   })
 })()
 
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100){ // Set position from top to add class
+      $('.navbar').addClass("shrink");
+  } else {
+      $('.navbar').removeClass("shrink");
+  }
+});
