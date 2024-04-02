@@ -119,11 +119,12 @@ body {
   opacity: 0.5;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:768px) {
   .profilemain{
     margin-top: 1.25rem;
   }
   .shrink{
     background-color: #ffffff7a;
+    color: black;
   }
 }

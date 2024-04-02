@@ -966,10 +966,6 @@ video {
   padding: 1.5rem;
 }
 
-.p-8 {
-  padding: 2rem;
-}
-
 .px-10 {
   padding-left: 2.5rem;
   padding-right: 2.5rem;
@@ -1323,13 +1319,14 @@ body {
   opacity: 0.5;
 }
 
-@media screen and (max-width:640px) {
+@media screen and (max-width:768px) {
   .profilemain{
     margin-top: 1.25rem;
   }
 
   .shrink{
     background-color: #ffffff7a;
+    color: black;
   }
 }
 
@@ -1589,6 +1586,10 @@ body {
 
   .md\:p-0 {
     padding: 0px;
+  }
+
+  .md\:p-8 {
+    padding: 2rem;
   }
 
   .md\:px-5 {
