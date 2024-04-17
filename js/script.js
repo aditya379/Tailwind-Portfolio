@@ -31,7 +31,7 @@ nextBtn.addEventListener("click", () => slide("next"));
 
 (function sendMsg(){
   let button=document.getElementById('sendMsg').addEventListener('click',()=>{
-    alert("under development")
+    alert("Backend is in development");
   })
 })()
 
