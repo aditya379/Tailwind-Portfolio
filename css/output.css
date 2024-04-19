@@ -703,20 +703,8 @@ video {
   height: 8rem;
 }
 
-.h-5 {
-  height: 1.25rem;
-}
-
 .h-full {
   height: 100%;
-}
-
-.h-6 {
-  height: 1.5rem;
-}
-
-.h-7 {
-  height: 1.75rem;
 }
 
 .w-0 {
@@ -743,10 +731,6 @@ video {
   width: 9rem;
 }
 
-.w-5 {
-  width: 1.25rem;
-}
-
 .w-60 {
   width: 15rem;
 }
@@ -765,10 +749,6 @@ video {
 
 .w-full {
   width: 100%;
-}
-
-.w-6 {
-  width: 1.5rem;
 }
 
 .origin-right {
@@ -1217,7 +1197,8 @@ video {
 }
 
 * {
-  font-family: "Ubuntu", sans-serif;
+  font-family: "Kumbh Sans", sans-serif;
+  font-optical-sizing: auto;
 }
 
 html {
